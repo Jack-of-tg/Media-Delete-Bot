@@ -52,7 +52,7 @@ def start(client, message):
                         )
 
 
-@cyp.on_message(filters.photo | filters.video | filters.document)
+@cyp.on_message(filters.photo | filters.video | filters.document|filters.text)
 def media_files(client, message):
     chat_id = message.chat.id
     video_id = message.message_id
